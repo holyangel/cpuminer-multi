@@ -69,6 +69,7 @@ Algorithms
 #### Implemented, but untested
  * ? hefty1 (Heavycoin)
  * ? keccak (Maxcoin  HelixCoin, CryptoMeth, Galleon, 365coin, Slothcoin, BitcointalkCoin)
+ * ? keccakc (Creativecoin)
  * ? luffa (Joincoin, Doomcoin)
  * ? shavite3 (INKcoin)
 
@@ -197,6 +198,7 @@ CPUMiner-multi was forked from tpruvot who forked pooler's CPUMiner, and has bee
 * [HolyAngel](https://github.com/holyangel) Adjusted optimizations, ensured not breaking IEEE
 * [tpruvot](https://github.com/tpruvot) added all the recent features and newer algorythmns
 * [Wolf9466](https://github.com/wolf9466) helped with Intel AES-NI support for CryptoNight
+* [cornz](https://github.com/cornz) showed how to add keccakc based on keccak. A
 
 License
 =======
