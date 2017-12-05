@@ -33,7 +33,7 @@ found_arm="no"
 
 if [ ! "0" = `cat /proc/cpuinfo | grep -c avx` ]; then
     # march native doesn't always works, ex. some Pentium Gxxx (no avx)
-    extracflags="$extracflags -march=native"
+    archcflags="$archcflags -march=native"
 fi
 
 if [ ! "0" = `grep -i ^Features /proc/cpuinfo | grep -c neon` ]; then
