@@ -13,7 +13,7 @@ rm -f config.status
 if [[ "$OSTYPE" == "darwin"* ]]; then
     ./nomacro.pl
     ./configure \
-        CFLAGS="-march=native -O2 -Ofast -flto -DUSE_ASM -pg" \
+        CFLAGS="-march=native -O2 -O3 -flto -DUSE_ASM -pg" \
         --with-crypto=/usr/local/opt/openssl \
         --with-curl=/usr/local/opt/curl
     make -j4
