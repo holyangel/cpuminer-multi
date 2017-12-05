@@ -55,9 +55,9 @@ if [ ! "0" = `grep -i ^Hardware /proc/cpuinfo | grep -c ODROID-XU3` ]; then
 fi
 
 if [ "$found_arm" = "yes" ]; then
-	./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -pg" --disable-assembly 
+	./configure --with-crypto --with-curl CFLAGS="$extracflags -pg" --disable-assembly 
 else
-	./configure --with-crypto --with-curl CFLAGS="-O2 $extracflags -DUSE_ASM -pg"
+	./configure --with-crypto --with-curl CFLAGS="$extracflags $archflags -DUSE_ASM -pg"
 fi
 
 make -j 4
