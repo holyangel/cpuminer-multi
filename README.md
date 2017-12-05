@@ -116,6 +116,12 @@ _OR_
  ./configure --disable-assembly CFLAGS="-O3 -march=native" --with-crypto --with-curl
 ```
 
+#### Note for OS X users:
+
+```
+ brew install openssl curl
+```
+
 #### Notes for AIX users:
  * To build a 64-bit binary, export OBJECT_MODE=64
  * GNU-style long options are not supported, but are accessible via configuration file
