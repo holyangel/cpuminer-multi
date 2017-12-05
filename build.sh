@@ -38,7 +38,7 @@ fi
 
 if [ ! "0" = `grep -i ^Features /proc/cpuinfo | grep -c neon` ]; then
 	    # add general ARM neon support on Arm CPUs
-            extracflags="$extracflags -march=armv7-a -mfloat-abi=hard -mfpu=neon-vfpv4  -funsafe-math-optimizations -mtune=cortex-a7"
+            extracflags="$extracflags -march=armv7-a -mfloat-abi=hard -mfpu=neon-vfpv4 -mtune=cortex-a7"
             found_arm="yes"
 fi
 
@@ -50,7 +50,7 @@ fi
 
 if [ ! "0" = `grep -i ^Hardware /proc/cpuinfo | grep -c ODROID-XU3` ]; then
             # add ARM neon support on ODROID XU3,XU4 and HC1 Boards (Exynos5422)
-            extracflags="$extracflags -march=armv7-a -mfloat-abi=hard -mfpu=neon-vfpv4  -funsafe-math-optimizations -mtune=cortex-a15.cortex-a7"
+            extracflags="$extracflags -march=armv7-a -mfloat-abi=hard -mfpu=neon-vfpv4 -mtune=cortex-a15.cortex-a7"
 	    found_arm="yes"
 fi
 
