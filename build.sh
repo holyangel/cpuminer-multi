@@ -60,6 +60,6 @@ else
 	./configure --with-crypto --with-curl CFLAGS="$extracflags $archflags -DUSE_ASM -pg"
 fi
 
-make -j 4
+make -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
 
 strip -s cpuminer
