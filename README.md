@@ -4,7 +4,7 @@ CPUMiner-Multi
 [![Build Status](https://travis-ci.org/tpruvot/cpuminer-multi.svg)](https://travis-ci.org/tpruvot/cpuminer-multi)
 
 This is a multi-threaded CPU miner,
-fork of [pooler](//github.com/pooler)'s cpuminer (see AUTHORS for list of contributors).
+fork of [tpruvot](//github.com/tpruvot)'s cpuminer (see AUTHORS for list of contributors).
 
 #### Table of contents
 
@@ -113,7 +113,7 @@ _OR_
 #### Note for pi64 users:
 
 ```
- ./configure --disable-assembly CFLAGS="-Ofast -march=native" --with-crypto --with-curl
+ ./configure --disable-assembly CFLAGS="-O3 -march=native" --with-crypto --with-curl
 ```
 
 #### Notes for AIX users:
@@ -173,6 +173,10 @@ Donations
 =========
 Donations for the work done in this fork are accepted :
 
+Miguel Martinez :
+* BTC: 1Fibq7YQyTWBzUvMXJQEEgTdSLdhwDttG5
+* XMR: 45o1HN4k3uRUR3vsfLmYfgZyExAJ6GQHQFHD8dnhDPS5Qk3WTKM3YBfeDsjkb5KXMrMrSBbnwSmDFNbGjM18yBc2VYfSbSp
+
 Tanguy Pruvot :
 * BTC: `1FhDPLPpw18X4srecguG3MxJYe4a1JsZnd`
 * ZRC: `ZX6LmrCwphNgitxvDnf8TX6Tsegfxpeozx`
@@ -183,7 +187,8 @@ Lucas Jones :
 
 Credits
 =======
-CPUMiner-multi was forked from pooler's CPUMiner, and has been started by Lucas Jones.
+CPUMiner-multi was forked from tpruvot who forked pooler's CPUMiner, and has been started by Lucas Jones.
+* [HolyAngel](https://github.com/holyangel) Adjusted optimizations, ensured not breaking IEEE
 * [tpruvot](https://github.com/tpruvot) added all the recent features and newer algorythmns
 * [Wolf9466](https://github.com/wolf9466) helped with Intel AES-NI support for CryptoNight
 
