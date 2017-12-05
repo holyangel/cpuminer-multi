@@ -328,7 +328,7 @@ int scanhash_cryptonight(int thr_id, struct work *work, uint32_t max_nonce, uint
 		do {
 			*nonceptr = ++n;
 			cryptonight_hash_ctx_aes_ni(hash, pdata, 76, ctx);
-			if (unlikely(hash[7] < ptarget[7])) {
+			if (unlikely(hash[7] < ptarget[7]) && fulltest(hash, ptarget)) {
 				work_set_target_ratio(work, hash);
 				*hashes_done = n - first_nonce + 1;
 				free(ctx);
@@ -339,7 +339,7 @@ int scanhash_cryptonight(int thr_id, struct work *work, uint32_t max_nonce, uint
 		do {
 			*nonceptr = ++n;
 			cryptonight_hash_ctx(hash, pdata, 76, ctx);
-			if (unlikely(hash[7] < ptarget[7])) {
+			if (unlikely(hash[7] < ptarget[7]) && fulltest(hash, ptarget)) {
 				work_set_target_ratio(work, hash);
 				*hashes_done = n - first_nonce + 1;
 				free(ctx);
