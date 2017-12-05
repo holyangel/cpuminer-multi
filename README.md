@@ -174,8 +174,8 @@ Donations
 Donations for the work done in this fork are accepted :
 
 Miguel Martinez :
-* BTC: 1Fibq7YQyTWBzUvMXJQEEgTdSLdhwDttG5
-* XMR: 45o1HN4k3uRUR3vsfLmYfgZyExAJ6GQHQFHD8dnhDPS5Qk3WTKM3YBfeDsjkb5KXMrMrSBbnwSmDFNbGjM18yBc2VYfSbSp
+* BTC: `1Fibq7YQyTWBzUvMXJQEEgTdSLdhwDttG5`
+* XMR: `45o1HN4k3uRUR3vsfLmYfgZyExAJ6GQHQFHD8dnhDPS5Qk3WTKM3YBfeDsjkb5KXMrMrSBbnwSmDFNbGjM18yBc2VYfSbSp`
 
 Tanguy Pruvot :
 * BTC: `1FhDPLPpw18X4srecguG3MxJYe4a1JsZnd`
